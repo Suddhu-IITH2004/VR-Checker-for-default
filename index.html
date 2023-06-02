@@ -52,10 +52,10 @@
             const canvas = document.querySelector('#c');
             const renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
 
-            const fov = 75;
+            const fov = 50;
             const aspect = 2; // the canvas default
             const near = 0.1;
-            const far = 50;
+            const far = 10000;
             const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
             camera.position.set(0, 1.6, 0);
             const params = (new URL(document.location)).searchParams;
@@ -99,7 +99,7 @@
             loader.load('model.gltf', function (gltf) {
                 const model = gltf.scene;
                 scene.add(model);
-                model.position.set(0, 1.6, -2);
+                model.position.set(0, 0.8, -2.5);
                 model.rotation.set(0, 0, 0); // Set initial rotation
 
                 // Variables for joystick rotation
