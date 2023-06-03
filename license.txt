@@ -1,0 +1,11 @@
+Model Information:
+* title:	Brandenburg Gate Reconstruction by NeuralRecon-W
+* source:	https://sketchfab.com/3d-models/brandenburg-gate-reconstruction-by-neuralrecon-w-23665e3f0c654d93bc248b39fa3fabe1
+* author:	Jiaming Sun (https://sketchfab.com/jiamingsun)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Brandenburg Gate Reconstruction by NeuralRecon-W" (https://sketchfab.com/3d-models/brandenburg-gate-reconstruction-by-neuralrecon-w-23665e3f0c654d93bc248b39fa3fabe1) by Jiaming Sun (https://sketchfab.com/jiamingsun) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
