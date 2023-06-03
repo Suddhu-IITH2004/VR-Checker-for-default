@@ -57,9 +57,9 @@
             const far = 10000;
             const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
             camera.position.set(0, 1.6, 0);
-            // const params = (new URL(document.location)).searchParams;
-            // const allowvr = params.get('allowvr') === 'true';
-            if (true) {
+             const params = (new URL(document.location)).searchParams;
+             const allowvr = params.get('allowvr') === 'true';
+            if (allowvr) {
                 renderer.xr.enabled = true;
                 document.body.appendChild(VRButton.createButton(renderer));
                 document.querySelector('#vr').style.display = 'none';
