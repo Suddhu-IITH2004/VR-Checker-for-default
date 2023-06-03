@@ -21,7 +21,7 @@
 
         .mode {
             position: absolute;
-            left: 1em;
+            right: 1em;
             top: 1em;
         }
     </style>
@@ -57,12 +57,13 @@
             const far = 10000;
             const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
             camera.position.set(0, 1.6, 0);
-       
-
+            // const params = (new URL(document.location)).searchParams;
+            // const allowvr = params.get('allowvr') === 'true';
+            if (true) {
                 renderer.xr.enabled = true;
                 document.body.appendChild(VRButton.createButton(renderer));
                 document.querySelector('#vr').style.display = 'none';
-
+            } 
 
             const scene = new THREE.Scene();
             {
@@ -87,10 +88,10 @@
             }
 
             const loader = new GLTFLoader();
-            loader.load('scene.gltf', function (gltf) {
+            loader.load('model.gltf', function (gltf) {
                 const model = gltf.scene;
                 scene.add(model);
-                model.position.set(0, 0, -2.5);
+                model.position.set(0, 0.8, -2.5);
                 model.rotation.set(0, 0, 0); // Set initial rotation
 
                 // Variables for joystick rotation
