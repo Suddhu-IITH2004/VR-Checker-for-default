@@ -58,11 +58,11 @@
             const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
             camera.position.set(0, 1.6, 0);
        
-            if (true) {
+
                 renderer.xr.enabled = true;
                 document.body.appendChild(VRButton.createButton(renderer));
                 document.querySelector('#vr').style.display = 'none';
-            } 
+
 
             const scene = new THREE.Scene();
             {
